@@ -12,16 +12,13 @@ import android.widget.Toast;
 public class GridViewActivity extends AppCompatActivity {
 
     static final String[] numbers = new String[]{
-            "1", "2", "3", "4", "5",
-            "6", "7", "8", "9", "10",
-            "Android",
-            "IPhone",
-            "WindowsMobile",
-            "Blackberry",
-            "WebOS",
-            "Ubuntu",
-            "Windows7",
-            "Max OS X"
+            "IronMan",
+            "Thor",
+            "Captain Pakistan",
+            "Wolverine",
+            "Kamala Khan",
+            "Winter Soldier",
+            "Thunder"
     };
 
     @Override
@@ -30,7 +27,6 @@ public class GridViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_grid_view);
 
         GridView mGridView = findViewById(R.id.myGridView);
-
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, numbers);
         mGridView.setAdapter(adapter);
@@ -38,7 +34,5 @@ public class GridViewActivity extends AppCompatActivity {
         mGridView.setOnItemClickListener((parent, view, position, id) -> {
             Toast.makeText(this, "Clicked:" + numbers[position], Toast.LENGTH_SHORT).show();
         });
-
-
     }
 }

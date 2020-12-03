@@ -11,7 +11,15 @@ import android.widget.Toast;
 
 public class SpinnerActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    private String[] country = {"India", "USA", "China", "Japan", "Other"};
+    private String[] superheroes = {
+            "IronMan",
+            "Thor",
+            "Captain Pakistan",
+            "Wolverine",
+            "Kamala Khan",
+            "Winter Soldier",
+            "Thunder"
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +31,7 @@ public class SpinnerActivity extends AppCompatActivity implements AdapterView.On
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                 this,
                 android.R.layout.simple_spinner_dropdown_item,
-                country
+                superheroes
         );
         mSpinner.setAdapter(adapter);
         mSpinner.setOnItemSelectedListener(this);
@@ -31,7 +39,7 @@ public class SpinnerActivity extends AppCompatActivity implements AdapterView.On
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        Toast.makeText(this, "Selected:" + country[position], Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Selected:" + superheroes[position], Toast.LENGTH_SHORT).show();
     }
 
     @Override

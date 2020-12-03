@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="176dp"
         android:text="ListView"
+        android:padding="15dp"
         android:textAllCaps="false"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +26,7 @@
         android:layout_marginTop="32dp"
         android:text="GridView"
         android:textAllCaps="false"
-
+        android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myListViewBtn" />
@@ -37,6 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Spinner"
+        android:padding="15dp"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

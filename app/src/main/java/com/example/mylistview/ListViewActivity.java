@@ -22,7 +22,6 @@ public class ListViewActivity extends AppCompatActivity {
             "Max OS X"
     };
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
