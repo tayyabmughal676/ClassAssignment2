@@ -21,6 +21,7 @@ public class SpinnerActivity extends AppCompatActivity implements AdapterView.On
             "Thunder"
     };
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
